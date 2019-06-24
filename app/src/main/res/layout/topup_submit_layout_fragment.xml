@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/textTypeEditShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:hint="Type Display Text"
+        android:inputType="text"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:textColor="#556"
+        android:textSize="13sp" />
+
+
+    <LinearLayout
+        android:id="@+id/bodyCarrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTypeEditShow"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/typefaceDropDown"
+            style="@style/ThemeOverlay.AppCompat.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/typefaceStyle"
+            style="@style/AppTheme.PopupOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bodyCarrier"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="12" />
+
+        <ImageButton
+            android:padding="10dp"
+            android:background="@drawable/message_button"
+            android:id="@+id/colorPickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_color_lens_24dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutSeekBar"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_button"
+            android:text="Cancel"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/acceptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/connect_button"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

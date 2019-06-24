@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/imgHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/imgPhotoBox"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/avatar2"
+            app:siBorderColor="@color/white"
+            app:siBorderWidth="6dp"
+            app:siRadius="6dp"
+            app:siSquare="true" />
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/imgPhotoBox2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/avatar2"
+            app:siBorderColor="@color/white"
+            android:visibility="gone"
+            app:siBorderWidth="6dp"
+            app:siRadius="6dp"
+            app:siSquare="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgHolder"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="12" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBorderAllow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Remove Border" />
+
+        <ImageButton
+            android:id="@+id/colorPickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_button"
+            android:padding="10dp"
+            android:src="@drawable/ic_color_lens_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutSeekBar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroupImgShapeType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/circularTypeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Circular" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rectangularTypeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rectangular" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/roundedTypeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rounded" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_button"
+            android:text="Cancel"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/acceptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/connect_button"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Apply Changes"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>
