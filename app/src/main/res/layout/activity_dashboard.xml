@@ -39,31 +39,31 @@
                 android:textSize="15sp" />
 
             <Button
-                android:id="@+id/newCardDesign"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/connect_button"
-                android:drawableStart="@drawable/ic_credit_card_b"
-                android:drawableEnd="@drawable/ic_add_light_24dp"
-                android:drawablePadding="20dp"
-                android:padding="20dp"
-                android:text="DESIGN BUSINESS CARDS"
-                android:textAlignment="textStart"
-                android:textColor="@color/white" />
-
-            <Button
                 android:id="@+id/createdDesign"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/message_button"
+                android:background="@drawable/connect_button"
                 android:drawableStart="@drawable/ic_compare_arrows_black_24dp"
                 android:drawableEnd="@drawable/ic_add_light_24dp"
                 android:drawablePadding="20dp"
                 android:padding="20dp"
                 android:text="DESIGN ID CARDS"
                 android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/newCardDesign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/message_button"
+                android:drawableStart="@drawable/ic_credit_card_b"
+                android:drawableEnd="@drawable/ic_add_light_24dp"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:text="DESIGN BUZ CARDS"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/templateDesign"
